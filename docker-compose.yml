@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:10.5
+    container_name: meet-mariadb
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: meetdb
+      MYSQL_USER: koul
+      MYSQL_PASSWORD: "1234"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
