@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3307/meetdb
+    username: koul
+    password: 1234
+
+  mybatis:
+    mapper-locations: classpath:/mapper/**/*.xml
+    type-aliases-package: com.koul.MeetUp.domain
+
+logging:
+  level:
+    org.mybatis: DEBUG
+    com.example.project: DEBUG
