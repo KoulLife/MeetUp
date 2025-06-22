@@ -1,0 +1,65 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.nb-gradle/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# MyBatis Mapper XML Compile Output (만약 컴파일 결과물이 별도로 있다면)
+generated-sources/
+
+# 환경설정 파일 (민감정보)
+application-local.yml
+application-dev.yml
+application-prod.yml
+
+# 기타
+.env
+*.tmp
+*.swp
+*.bak
